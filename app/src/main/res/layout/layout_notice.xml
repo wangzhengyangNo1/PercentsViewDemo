@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="67dp"
+    android:minWidth="120dp"
+    android:minHeight="67dp"
+    android:background="#f2173f75"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="NOTICE"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:lines="1"
+        android:ellipsize="end"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_label_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="媒体数据量: "
+            android:textColor="@android:color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="000,000,000"
+            android:textColor="@android:color/white"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        >
+
+        <TextView
+            android:id="@+id/tv_label_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="媒体数据占比: "
+            android:textColor="@android:color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:lines="1"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+</FrameLayout>
